@@ -1,0 +1,12 @@
+{
+  "name": "saif-rohyal-portfolio-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:web": "npm --prefix web run dev",
+    "build:web": "npm --prefix web run build",
+    "start:web": "npm --prefix web run start",
+    "dev:api": "python -m uvicorn api.main:app --reload --port 8000",
+    "lint:web": "npm --prefix web run lint"
+  }
+}
