@@ -1,33 +1,15 @@
+
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
-const serifFont = Fraunces({
-  subsets: ["latin"],
-  variable: "--font-serif",
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
-
-const sansFont = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
-
-const monoFont = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-  weight: ["400", "500", "600"],
-  display: "swap",
-});
-
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://saif-rohyal.dev"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://saifullah.engineer"
+  ),
   title: "Saif Rohyal — Full Stack AI Engineer",
-  description: "Portfolio of Saif Rohyal. I build autonomous, multi-agent AI systems with LangGraph, LangChain, OpenAI Agents SDK, CrewAI, AutoGen, and MCP, backed by Python and FastAPI.",
+  description:
+    "Portfolio of Saif Rohyal. I build autonomous, multi-agent AI systems with LangGraph, LangChain, OpenAI Agents SDK, CrewAI, AutoGen, and MCP, backed by Python and FastAPI.",
   keywords: [
     "Saif Rohyal",
     "Full Stack AI Engineer",
@@ -39,16 +21,22 @@ export const metadata: Metadata = {
     "Model Context Protocol",
     "MCP",
     "Multi-Agent Systems",
-    "Peshawar AI Engineer"
+    "Peshawar AI Engineer",
   ],
-  authors: [{ name: "Saif Rohyal", url: "https://github.com/saif-rohyal" }],
+  authors: [
+    {
+      name: "Saif Rohyal",
+      url: "https://github.com/saif-rohyal",
+    },
+  ],
   creator: "Saif Rohyal",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://saif-rohyal.dev",
+    url: "https://saifullah.engineer",
     title: "Saif Rohyal — Full Stack AI Engineer",
-    description: "I build AI agents and the full stack products around them. Explore multi-agent architectures, computer vision, and real-time voice agents.",
+    description:
+      "I build AI agents and the full stack products around them. Explore multi-agent architectures, computer vision, and real-time voice agents.",
     siteName: "Saif Rohyal Portfolio",
     images: [
       {
@@ -97,15 +85,16 @@ export default function RootLayout({
     givenName: "Saif",
     familyName: "Rohyal",
     jobTitle: "Full Stack AI Engineer",
-    description: "I build autonomous, multi-agent AI systems with LangGraph, LangChain, OpenAI Agents SDK, CrewAI, AutoGen and MCP, backed by Python and FastAPI.",
+    description:
+      "I build autonomous, multi-agent AI systems with LangGraph, LangChain, OpenAI Agents SDK, CrewAI, AutoGen and MCP, backed by Python and FastAPI.",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Peshawar",
-      addressCountry: "Pakistan"
+      addressCountry: "Pakistan",
     },
     alumniOf: {
       "@type": "CollegeOrUniversity",
-      name: "Ghazi University"
+      name: "Ghazi University",
     },
     knowsAbout: [
       "LangGraph",
@@ -117,19 +106,19 @@ export default function RootLayout({
       "Python",
       "Computer Vision",
       "Voice AI",
-      "Next.js"
+      "Next.js",
     ],
     sameAs: [
       "https://github.com/saif-rohyal",
       "https://x.com/zaif_ukash",
       "https://www.facebook.com/profile.php?id=61551007321346",
       "https://www.instagram.com/xvif_khvn",
-      "https://linkedin.com/in/saif-rohyal"
-    ]
+      "https://linkedin.com/in/saif-rohyal",
+    ],
   };
 
   return (
-    <html lang="en" suppressHydrationWarning className={`${serifFont.variable} ${sansFont.variable} ${monoFont.variable}`}>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
