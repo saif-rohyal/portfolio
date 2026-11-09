@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowDown, Download, Sparkles, MapPin, Briefcase, Terminal, ArrowRight } from "lucide-react";
+import { Download, Sparkles, MapPin, Briefcase, Terminal, ArrowRight } from "lucide-react";
 import { PROFILE } from "@/data/profile";
 import { AVATAR_BLUR_DATA_URL } from "@/data/image-meta";
 
